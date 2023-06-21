@@ -1,0 +1,13 @@
+import cmath
+a = float(input("Введите a: "))
+b = float(input("Введите b: "))
+c = float(input("Введите c: "))
+d = (b**2) - (4*a*c)
+if d >= 0:
+  x1 = (-b + cmath.sqrt(d)) / (2*a)
+  x2 = (-b -cmath.sqrt(d)) / (2*a)
+  print("Корни уравнения:", x1, x2)
+else: 
+  x1 = (-b + cmath.sqrt(d)) / (2*a)
+  x2 = (-b - cmath.sqrt(d)) / (2*a)
+  print("Комплексные корни уравнения:", x1, x2)
