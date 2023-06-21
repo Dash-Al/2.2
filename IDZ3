@@ -1,0 +1,7 @@
+K = int(input("Введите k:"))
+sum = 0
+for n in range(1, 5):
+  for i in range(10**(n-1), 10**n):
+    if i % k == 0:
+      sum += i
+print("Сумма всех n-значных чисел, кратных", k, "равна", sum)
